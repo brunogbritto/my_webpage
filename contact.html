@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Page</title>
+  <link href="css/contact.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/c9b1ead916.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <img src="/static/images/perfilv2.png" alt="logo" />
+    <div><a href="index.html" class="logo-link">Bruno Britto</a></div>
+    <div class="nav__line"></div>
+    <nav>
+
+      <ul class="nav__links">
+        <li><a href="#">Skills </a></li>
+        <li><a href="#">Projetos </a></li>
+        <li><a href="#">Sobre mim </a></li>
+      </ul>
+
+    </nav>
+
+    <a class="cta" href="contact.html"><button class="contact-me">Entre em contato</button></a>
+
+    <div class="nav__bars">
+      <i class="fa-solid fa-bars-staggered fa-2x fa-rotate-180"></i>
+    </div>
+
+  </header>
+  <div class="contact-container">
+    <div class="title">
+      <h2>Vamos conversar!</h2>
+    </div>
+
+    <div class="contact-box">
+      <div class="contact form">
+        <div><a href="index.html" class="go-back"><i class="fa-solid fa-chevron-left"></i> Voltar</a></div>
+        <h3>Envie uma mensagem</h3>
+        <form action="https://getform.io/f/48f58a84-3081-402b-a4c9-9db99b919d70" method="post"
+          enctype="multipart/form-data">
+          <div class="form-box">
+            <div class="row50">
+              <div class="input-box">
+                <label>Primeiro nome: </label>
+                <input type="text" name="first-name" placeholder="Bruno" required />
+              </div>
+              <div class="input-box">
+                <label>Último nome: </label>
+                <input type="text" name="last-name" placeholder="Britto" required />
+              </div>
+            </div>
+            <div class="row50">
+              <div class="input-box">
+                <label>E-mail: </label>
+                <input type="email" name="email" placeholder="email@email.com"
+                  pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+              </div>
+              <div class="input-box">
+                <label>Celular: </label>
+                <input type="text" name="cell-phone" placeholder="021 99999-9999 (opcional)" />
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="input-box">
+                <label>Mensagem: </label>
+                <textarea placeholder="Escreva aqui sua mensagem." required></textarea>
+              </div>
+            </div>
+
+            <div class="rowbottom">
+              <div class="input-box">
+                <input type="submit" value="Enviar">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--
+      <div class="contact info">
+        <h3>Minhas Informações:</h3>
+        <div class="info-box">
+          <div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact map">
+        <h3>Minha Localização</h3>
+      </div>
+      -->
+    </div>
+
+
+
+  </div>
+
+
+
+</body>
+
+</html>

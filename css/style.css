@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #003737; 
+  
+}
+
+li, a {
+  font-family: "Montserrat", sans-serif; /* ver fonte circular*/
+  font-weight: 500;
+  font-size: 24px;
+  color: #003737; 
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logo-link {
+  font-family: "Montserrat", sans-serif; /* ver fonte circular*/
+  font-weight: 600;
+  font-size: 24px;
+  color: #003737;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+  margin-right: auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  top: 0;
+  z-index: 9;
+}
+
+button {
+  font-family: "Montserrat", sans-serif; /* ver fonte circular*/
+  font-size: 24px;
+  margin-left: 40px;
+  height: 65px;
+  padding: 9px 25px;
+  background-color: #003737;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  
+}
+
+.nav__links {
+  list-style: none;
+  margin-right: -20px;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+  background-color: white;
+
+}
+
+.nav__links li, a, button {
+  display: inline-block;
+  padding: 0px 20px;
+
+}
+
+.nav__line {
+  border: 2px solid rgba(10, 42, 48, 0.2);
+  display: flex;
+  flex: 1;
+  margin-left: 25px;
+
+}
+
+.nav__bars {
+  display: none;
+}
+
+.main-container {
+  width: 80%;
+  height: 350px;
+  margin-top: 20px;
+  margin-left: 200px;
+  display: sticky;
+  justify-content: center;
+  border-radius: 100px;
+  
+}
+
+.baloon {
+  position: relative;
+	background: #ffffff;
+  border-radius: 100px;
+  padding-bottom: 50px;
+  margin-top: 175px;
+  margin-right: 350px;
+
+}
+
+.baloon:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0%;
+	width: 0;
+	height: 0;
+	border: 18px solid transparent;
+	border-bottom-color: #ffffff;
+	border-top: 0;
+	border-left: 0;
+	margin-left: 100px;
+	margin-top: -18px;
+}
+
+.text-container {
+  width: 100%;
+  margin-left: 30px;
+  margin-right: 250px;
+  padding-top: 50px;
+  
+    
+}
+
+.hello {
+  font-family: "Montserrat", sans-serif; /* ver fonte circular*/
+  position: relative;
+  font-size: 62px;
+  font-weight: bold;
+  color: #003737;
+  margin-right: 100px;
+
+}
+
+.hello-golden {
+  color: #c49800;
+  font-family: "Montserrat", sans-serif; /* ver fonte circular*/
+  position: relative;
+  font-size: 62px;
+  font-weight: bold;
+  margin-right: 100px;
+  
+}
+
+.mid-container {
+  padding: 0;
+  margin: 0;
+  margin-top: ;
+}
+
+.titles {
+  font-family: "Montserrat", sans-serif;
+  color: #e8e8e8;
+  font-size: 45px;
+  margin-top: 75px;
+}
+
+.description {
+  font-family: "Montserrat", sans-serif;
+  color: #e8e8e8;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px; 
+  
+}
+
+.skill-img {
+  width: 150px;
+  height: 150px;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1410px) {
+
+  li, a, button {
+    font-size: 20px;
+  }
+  .nav__links li {
+    display: inline-block;  
+  }
+
+  .nav__links li, a, button {
+  padding: 0px 10px;
+  }
+
+
+  .hello {
+    font-size: 52px;
+    padding-right: 30px;
+  }
+  .hello-golden {
+    font-size: 52px;
+  }
+
+  .baloon {
+    margin-right: 180px;
+    margin-bottom: 65px;
+    
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .nav__links li {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+
+  .nav__bars {
+    display: flex;
+    color: #003737;
+  }
+
+  .baloon {
+    border-radius: 100px;
+    margin-bottom: 110px;
+  }
+
+  .main-container {
+    border-radius: 100px;
+  }
+
+  .hello  {
+  font-size: 32px;
+  }
+  
+.hello-golden {
+  font-size: 32px;
+  }
+}
+
+@media (max-width: 430px) and (min-width: 375px) {
+
+.main-container {
+  margin-top: 0px;
+  margin-left: 5px;
+}
+
+.text-container {
+  width: 100%;
+  margin-left: 21px;
+  margin-right: 185px;
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+  
+.baloon {
+  margin-right: -50px;
+  margin-bottom: 25px;
+  padding-bottom: 0px;
+}
+
+  
+.hello  {
+  font-size: 19px;
+  margin-right: 0px;
+  padding-right: 0px;
+  }
+  
+.hello-golden {
+  font-size: 19px;
+  margin-right: 0px;
+  padding-right: 0px;
+  }
+}
