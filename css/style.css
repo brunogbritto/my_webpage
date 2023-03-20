@@ -418,4 +418,30 @@ button:hover {
     width: 84px;
     height: 84px;
   }
+
+  .scd-text, .scd-text-golden {
+    font-size: 19px;
+    padding-bottom: 60px;
+  }
+
+  .scd-text-golden:before {
+  content: "";
+  position: absolute;
+  top: 48px;
+  left: 135px;
+  width: 29%;
+  height: 15%;
+  background-color: white;
+  border-left: 3px solid #003737;
+  animation: animate 3s steps(10) infinite;
+}
+
+@keyframes animate{
+  40%, 60% {
+    left: 75%;
+  }
+  100% {
+    left: 20%;
+  }
+}
 }
