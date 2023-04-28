@@ -40,35 +40,34 @@
       <div class="contact form">
         <div><a href="index.html" class="go-back"><i class="fa-solid fa-chevron-left"></i> Voltar</a></div>
         <h3>Envie uma mensagem</h3>
-        <form action="https://getform.io/f/48f58a84-3081-402b-a4c9-9db99b919d70" method="post"
-          enctype="multipart/form-data">
+        <form id="contact-form" action="https://getform.io/f/48f58a84-3081-402b-a4c9-9db99b919d70" method="post"
+          enctype="multipart/form-data" novalidate>
           <div class="form-box">
             <div class="row50">
               <div class="input-box">
                 <label>Primeiro nome: </label>
-                <input type="text" name="first-name" placeholder="Bruno" required />
+                <input id="name" type="text" name="first-name" placeholder="Bruno" />
               </div>
               <div class="input-box">
                 <label>Último nome: </label>
-                <input type="text" name="last-name" placeholder="Britto" required />
+                <input id="last-name" type="text" name="last-name" placeholder="Britto" />
               </div>
             </div>
             <div class="row50">
               <div class="input-box">
                 <label>E-mail: </label>
-                <input type="email" name="email" placeholder="email@email.com"
-                  pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+                <input id="email" type="email" name="email" placeholder="email@email.com" />
               </div>
               <div class="input-box">
                 <label>Celular: </label>
-                <input type="text" name="cell-phone" placeholder="021 99999-9999 (opcional)" />
+                <input id="cel" type="text" name="cell-phone" placeholder="021 99999-9999 (opcional)" />
               </div>
             </div>
 
             <div class="row100">
               <div class="input-box">
                 <label>Mensagem: </label>
-                <textarea placeholder="Escreva aqui sua mensagem." required></textarea>
+                <textarea id="message" placeholder="Escreva aqui sua mensagem."></textarea>
               </div>
             </div>
 
@@ -101,7 +100,7 @@
   </div>
 
 
-
+  <script type="text/javascript" src="contact.js"></script>
 </body>
 
 </html>
